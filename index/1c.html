@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  ذكر</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://th.bing.com/th/id/OIP.R-_cLQtQLgvbU9XytCOtfgHaFj?rs=1&pid=ImgDetMain');
+            background-size: cover;
+            background-position: center;
+            color: #efe5e5;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #e4dfdf;
+            margin-bottom: 10px;
+            font-size: 2em;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            padding: 20px;
+        }
+        .surah {
+            background-color: rgba(30, 30, 30, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .surah:hover {
+            transform: scale(1.05);
+            background-color: rgba(226, 220, 220, 0.9);
+        }
+        .surah p {
+            margin: 0;
+            font-size: 16px;
+            color: #f5f5f1;
+            font-weight: bold;
+        }
+        .adhkar-container {
+            margin-top: 30px;
+            background-color: rgba(30, 30, 30, 0.8);
+            border-radius: 15px;
+            padding: 15px;
+            display: none; /* مخفي بشكل افتراضي */
+        }
+        .show {
+            display: block; /* يظهر عند التفعيل */
+        }
+        .adhkar-toggle {
+            color: #f5f5f1;
+            cursor: pointer;
+            margin-top: 10px;
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function toggleAdhkar() {
+            const adhkarContainer = document.getElementById('adhkar-container');
+            adhkarContainer.classList.toggle('show');
+        }
+    </script>
+</head>
+<body>
+
+<h1> ﴾فَذَكِّرْ إِنْ نَفَعَتِ الذِّكْرَى﴿</h1>
+<div class="container">
+    <div class="surah" onclick="location.href='alb.html'"><p>البقره</p></div>
+    <div class="surah" onclick="location.href='سورة الفاتحه.html'"><p>الفاتحه</p></div>
+    <div class="surah" onclick="location.href='الاخللاص.html'"><p>الإخلاص</p></div>
+    <div class="surah" onclick="location.href='المسد.html'"><p>المسد</p></div>
+    <div class="surah" onclick="location.href='الكهف.html'"><p>الكهف</p></div>
+    <div class="surah" onclick="location.href='الناس.html'"><p>الناس</p></div>
+    <div class="surah" onclick="location.href='الملك.html'"><p>الملك</p></div>
+    </div>
+
+<div class="adhkar-container" id="adhkar-container">
+    <h2>أذكار الصباح والمساء</h2>
+    <p> أستغفر الله (ثلاث مرات)</p>
+    <p> اللهم صل على محمد وعلى آل محمد</p>
+    <p> لا إله إلا الله وحده لا شريك له، له الملك وله الحمد، وهو على كل شيء قدير</p>
+    <p> بسم الله الذي لا يضر مع اسمه شيء في الأرض ولا في السماء، وهو السميع العليم (ثلاث مرات)</p>
+    <p>عوذ بكلمات الله التامات من شر ما خلق</p>
+    <p>سُبْحـانَ اللهِ وَبِحَمْـدِهِ عَدَدَ خَلْـقِه ، وَرِضـا نَفْسِـه ، وَزِنَـةَ عَـرْشِـه ، وَمِـدادَ كَلِمـاتِـه</p>
+       
+</div>
+
+<div class="adhkar-toggle" onclick="toggleAdhkar()">أذكار الصباح والمساء</div>
+
+<footer>
+    صدقة جارية عن لافي بشير
+</footer>
+
+</body>
+</html>
